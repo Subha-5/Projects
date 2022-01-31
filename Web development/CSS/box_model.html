@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+
+        /* universal selector */
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(239, 180, 245);
+        }
+        .container{
+            
+            background-color: rgb(238, 229, 237);
+            border: 3px solid rgb(64,6,119);
+            
+            
+            /* padding: 9px; */
+            /* We can set padding/margin top, bottom, left and right like this */
+            /* padding-top: 79px;
+            padding-bottom: 79px; 
+            padding-right: 79px;
+            padding-left: 34px; */
+        
+            padding : 230px 56px 6px 78px ;  /* padding/margin = top right bottom left ; */
+            padding : 34px 19px ; /* padding : y(top/bottom) x(left/right) ; */
+
+
+            margin: 14px 39px;
+            margin-top: 3px;
+            margin-bottom: 5px;
+            margin-left: 34px;
+            margin-right: 5px;
+            
+            border-radius: 29px;
+            width: 233px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis nulla aut laborum tenetur, ipsum quas, qui dolores atque repellendus mollitia repellat quam.</p>
+    </div>
+    
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="second">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis nulla aut laborum tenetur, ipsum quas, qui dolores atque repellendus mollitia repellat quam.</p>
+    </div>
+    
+    <div class="container">
+        <h3>This is my heading</h3>
+        <p id="third">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus veritatis nulla aut laborum tenetur, ipsum quas, qui dolores atque repellendus mollitia repellat quam.</p>
+    </div>
+
+</body>
+</html>

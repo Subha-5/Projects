@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selectors</title>
+</head>
+<style>
+    h1{
+        background-color: red;
+        color: black;
+        font-weight: bold;
+        text-align: center;    }
+    
+    /* if p is contained by any li which is contained by any div  */
+    div li p{
+        color: white;
+        background-color: blue;
+        font-weight: bold;
+    }
+    /*if p is right inside div then this CSS will be applied (direct child)  */
+    div > p{
+        color: yellow;
+        background-color: green;
+        font-weight: bold;
+    }
+    /* if p is right after div i.e. p is the next sibling of div (div followed by p) */
+    div + p{
+        color: white;
+        background-color: rgb(248, 109, 109);
+    }
+</style>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li class="item"><p>This is another paragraph inside li</p></li>
+                <li >This will not get affected</li>
+                <p>This is a Para inside ul</p>
+                <li class="item"></li>
+                <li class="item"></li>
+            </ul>
+            <p>This is a Paragraph</p>
+        </div>
+        <p>This is another Paragraph</p>
+    </div>
+    <p>This is outermost Paragraph</p>
+</body>
+</html>
