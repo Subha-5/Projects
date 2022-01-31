@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript : Arrays and Objects</title>
+</head>
+
+<body>
+    <div class="container">simple si html</div>
+    <script>
+        // Primitive data types
+        let myVar1 = 34; //integer
+        let myVar2 = "string"; // string
+        let myVar3 = true; // boolean
+        let myVar4 = null; // null or undefined
+        let myVar5 = undefined; // null or undefined
+
+
+        // let names = [ 1, 2, 4, "Coder", undefined];
+        // let names =new  Array( 41, 2, 4, "Coder", undefined);
+        let names = new Array(23); // creating an array to store 23 elements
+        console.log(names);
+        console.log(names.length);// prints the length of an array
+        names = names.sort();
+        names.push("This is pushed");
+        console.log(names);
+
+
+        let employee = {
+            name: "Coder",
+            salary: 10,
+            channel: "coders do not have channels",
+            "channel 2": "anonimous hacker",
+            // ...key : value pairs 
+        }
+        console.log(employee)
+
+    </script>
+</body>
+
+</html>
