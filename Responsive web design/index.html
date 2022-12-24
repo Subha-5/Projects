@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>Responsive website</title>
+</head>
+
+<body>
+    <nav class="navbar background height-nav-resp">
+        <ul class="nav-list v-class-resp">
+            <div class="logo">
+                <img src="https://c0.wallpaperflare.com/preview/745/709/180/background-black-coffee-close-up-coffee.jpg"
+                    alt="logo">
+            </div>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="rightNav v-class-resp">
+            <input type="text" name="search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+        <div class="burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </nav>
+
+    <section class="background firstSection" id="home">
+        <div class="box-main">
+            <div class="firstHalf">
+                <p class="text-big">The future of Responsiveness is here</p>
+                <p class="text-small">
+                    Responsive web design (RWD) is a web design approach to make web pages that render well on all
+                    screen sizes and resolutions while ensuring good usability. It is the way to design for a
+                    multi-device web.
+                </p>
+                <div class="buttons">
+                    <button class="btn">Subscribe</button>
+                    <button class="btn">Watch video</button>
+                </div>
+            </div>
+            <div class="secondHalf">
+                <img src="https://c0.wallpaperflare.com/preview/745/709/180/background-black-coffee-close-up-coffee.jpg"
+                    alt="laptop image">
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="about">
+        <div class="paras">
+            <p class="sectionTag text-big">Make more Responsive websites</p>
+            <p class="sectionSubTag text-small">
+                Responsive web design (RWD) or responsive design is an approach to web design that aims to make web
+                pages render well on a variety of devices and window or screen sizes from minimum to maximum display
+                size to ensure usability and satisfaction.
+
+                A responsive design adapts the web-page layout to the viewing environment by using techniques such as
+                fluid proportion-based grids, flexible images, and CSS3 media queries, an extension
+                of the @media rule, in the following ways:
+
+                The fluid grid concept calls for page element sizing to be in relative units like percentages, rather
+                than absolute units like pixels or points.
+                Flexible images are also sized in relative units, so as to prevent them from displaying outside their
+                containing element.
+                Media queries allow the page to use different CSS style rules based on characteristics of the device the
+                site is being displayed on, e.g. width of the rendering surface (browser window width or physical
+                display size).
+                Responsive layouts automatically adjust and adapt to any device screen size, whether it is a desktop, a
+                laptop, a tablet, or a mobile phone.
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="Laptop image" class="imgFluid">
+        </div>
+    </section>
+    <section class="section section-left" id="services">
+        <div class="paras">
+            <p class="sectionTag text-big">The end of irregular designs is here.</p>
+            <p class="sectionSubTag text-small">
+                Mobile-first design and progressive enhancement are related concepts that predate RWD. Browsers of
+                basic mobile phones do not understand JavaScript or media queries, so a recommended practice was to
+                create a basic web site and enhance it for smartphones and personal computers, rather than rely on
+                graceful degradation to make a complex, image-heavy site work on mobile phones.
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80"
+                alt="Laptop image" class="imgFluid">
+        </div>
+    </section>
+    <section class="section">
+        <div class="paras">
+            <p class="sectionTag text-big">Mobile first model is the new digital need</p>
+            <p class="sectionSubTag text-small">
+                Luke Wroblewski has summarized some of the RWD and mobile design challenges and created a catalog of
+                multi-device layout patterns. He suggested that, compared with a simple HWD approach, device
+                experience or RESS (responsive web design with server-side components) approaches can provide a user
+                experience that is better optimized for mobile devices. Server-side CSS generator
+                implementation of stylesheet languages like Sass can be part of such an approach. Google has recommended
+                responsive design for smartphone websites over other approaches.
+
+            </p>
+        </div>
+        <div class="thumbnail">
+            <img src="https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+                alt="Laptop image" class="imgFluid">
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h1 class="contact-heading">Contact Us</h1>
+        <div class="form">
+            <input type="text" name="name" id="name" placeholder="Enter your name">
+            <input type="text" name="phone" id="phone" placeholder="Enter your Phone">
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+            <textarea name="text" id="text" cols="30" rows="10" placeholder="Elaborate your concern"></textarea>
+            <button class="btn btn-dark btn-sm">Submit</button>
+        </div>
+    </section>
+
+    <footer class="background">
+        <p class="text-footer">
+            Copyright &copy; 2023 Responsive - All rights reserved
+        </p>
+    </footer>
+
+    <script src="js/resp.js"></script>
+
+</body>
+
+</html>
